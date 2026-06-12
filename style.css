@@ -1,0 +1,21 @@
+/* Custom styles on top of Tailwind if necessary */
+
+/* Focus ring overrides for forms */
+[type='text']:focus, 
+[type='date']:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.5); /* brand-500 with opacity */
+    border-color: #0ea5e9;
+}
+
+[type='radio']:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.5);
+}
+
+/* Smooth transitions */
+.transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
